@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 1. **Levantar contenedor de MongoDB**
 
 # Descargar e iniciar un contenedor de MongoDB con usuario root
@@ -10,21 +13,30 @@ docker run -d --name examen_mongodb -p 27017:27017 \
 2. **Acceder al contenedor con mongosh**
 
 # Entrar al contenedor y abrir mongosh con credenciales de root
+
 docker exec -it examen_mongodb mongosh -u root -p example --authenticationDatabase admin
 
 
 3. **Comandos ejecutados dentro de MongoDB**
 
 // Cambiar a la base de datos examen_db
+
 use examen_db
 
+
 // Ver colecciones disponibles
+
 show collections
+
 clientes
+
 pedidos
 
+
 // Consultar documentos en la colección clientes
+
 db.clientes.find().pretty()
+
 [
   {
     _id: ObjectId('68d9992edaeaa8052cce5f47'),
@@ -169,7 +181,9 @@ db.clientes.find().pretty()
 ]
 
 // Consultar documentos en la colección pedidos
+ 
  db.pedidos.find().pretty()
+
  [
   {
     _id: ObjectId('68d9992edaeaa8052cce5f5b'),
